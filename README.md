@@ -8,7 +8,9 @@ The data used to create these models was from experiment.csv is attached under t
 
 Plotting the Data: 
 
-The analysis began by simply plotting time against the population size of the *E. coli* This produced an S shaped curve which suggests the bacterial population is growing via logistic growth. This is when you initially have exponential growth, before slowing and becoming more linear as you reach the carrying capacity (k) , once at carrying capacity growth stops and the population is expected to remain constant if all else remains equal. The result is that at small populations and early in time very little change in population happens, however this quickly turns into rapid increase in population around intermediate values of t and population size before tailing off at high population sizes, was shown in the plots produced by the code in plot_data.R.<img width="532" alt="Screenshot 2024-12-12 at 21 26 29" src="https://github.com/user-attachments/assets/6a393bc5-74c6-4bd5-a8db-1d4ccfaae284" />
+The analysis began by simply plotting time against the population size of the *E. coli* This produced an S shaped curve which suggests the bacterial population is growing via logistic growth. This is when you initially have exponential growth, before slowing and becoming more linear as you reach the carrying capacity (k) , once at carrying capacity growth stops and the population is expected to remain constant if all else remains equal. The result is that at small populations and early in time very little change in population happens, however this quickly turns into rapid increase in population around intermediate values of t and population size before tailing off at high population sizes, was shown in the plots produced by the code in plot_data.R.
+
+<img width="532" alt="Screenshot 2024-12-12 at 21 26 29" src="https://github.com/user-attachments/assets/6a393bc5-74c6-4bd5-a8db-1d4ccfaae284" />
 
 Plot of time against population size from plot_data.R.
 
@@ -16,6 +18,7 @@ This is the sort of growth that is expected from bacteria as while the are able 
 
 
 The exponential, then linear behaviour of logistic growth can be better observed when the y-axis (population size) is log transformed. Therefore the next part of the analysis involved plotting the same data from experiment.csv but with the y-axis log transformed. Just the scale of the axis was transformed rather than the data itself to preserve the original raw data and prevent it being overwritten and potentially introducing issues later on. This plot can be seen below it shows linear increase in log population size (exponential growth) up until around the t = 1500 when it begins to slow, then around t = 2000 the line plateaus showing that population size has reached a constant and growth has stopped.
+
 <img width="535" alt="Screenshot 2024-12-12 at 21 32 35" src="https://github.com/user-attachments/assets/02b96683-04ad-44f9-9f4b-3701dc56cd75" />
 
 Extracting Values for Models:
@@ -29,6 +32,7 @@ r is the gradient of the linear model fitted to the exponential growth portion o
 Creating and Plotting Models:
 
 The next part of the analysis involved creating subsets of the data so that both the exponential growth section from the constant population section. This is useful as it allows you to extract the values of N0 (initial population size), r and K  from the data. A linear model was fitted to both sections of the data, however for the model representing growth between 0 ≤ t ≤ 1500 n was log transformed so the linear model actually represents exponentiial growth. The values extracted from the linear models were then substituted into a logistic growth function which used code from the file Logistic Function.R in the functions folder of this repository. This was then plotted on top of the log transformed plot the experimental data to see how well data fit the logistic growth model (plotted in red) (see below image). 
+
 <img width="565" alt="Screenshot 2024-12-12 at 21 54 49" src="https://github.com/user-attachments/assets/28e40bd2-3b34-4151-9c95-e9e8b7c1bc9a" />
 
 Results:
