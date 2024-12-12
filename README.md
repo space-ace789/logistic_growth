@@ -55,7 +55,15 @@ Therefore the exponential model predicts that after 4980 minutes the *E. coli* p
 
 On the otherhand the logistic model predicts that at this time population size will be 6.00 x 10<sup>10</sup>. The reason the exponential growth predicts a much higher number than the logistic growth model is that the exponential model does not account for carrying capacity, it is therefore modelling a population with infinite resources or one that has not reached its carrying capactiy yet. However we know that the carrying capacity of this population has been predicted to be 6.00 x 10<sup>10</sup>, and from the plots it is clear that by 4980 minutes the population has reached carrying capacity. 
 
+<ins>**Question 3**<ins>
 
+The R script used to create the plot comparing the logistic growth model with the exponential model is saved in the file, comparing_growth_models.R. To accompany this code I also created a new function for exponetial models, this can be found in the Functions folder, the path to reach it is Functions/Exponential Function.R.  
 
+This is the path to find the plot created from the code in comparing_growth_models.R, Outputs/Logistic_vs_Exponential_plot.png, which can be seen below.
 
+![Logistic_vs_Exponential_plot](https://github.com/user-attachments/assets/9b804ee9-1707-4b31-bb86-1357c0e29d8c)
+
+This graph shows the same results as our comparison of the predicted N when t = 4980, which is that while under the logistic growth curve growth rate will eventually stop increasing and the population will settle at the carrying capacity. However an exponential model simulates a species which grows continuously at an increasing rate, potentially for forever, which can be seen in this plot as the exponential model continues past the carrying capacity and continues to increase after the logistic model has plateaued. 
+
+Interestingly both models predict the same thing up until aroud t=1500, this would be expected as logistic growth models should follow exponential growth in the early stages of population growth. They only begin to slow down and deviate from the exponential growth model as they start to come close to K.
 
