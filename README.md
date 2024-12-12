@@ -36,10 +36,21 @@ Although no statistical tests were performed as seen in the plot above the logis
 
 As calculated from linear models fitted to data from the dataset included on experiment.csv ...
 
-N0 = 132.207 <br/>
-r = 0.0095218 <br/>
+N0 = 986.5075 <br/>
+r = 0.0100086 <br/>
 K = 6.00 x 10<sup>10</sup>
 
 <ins>**Question 2**<ins>
+
+Assuming exponential growth and based on the values extracted earlier N<sub>(t)</sub> = 986.5075(1+0.0100086)<sup>t</sup>.
+
+Therefore at t= 4980, N = 3.41159686x10<sup>24</sup>.
+
+Therefore the exponential model predicts that after 4980 minutes the *E. coli* population will be 3.41x10<sup>24</sup>. 
+
+On the otherhand the logistic model predicts that at this time population size will be 6.00 x 10<sup>10</sup>. The reason the exponential growth predicts a much higher number than the logistic growth model is that the exponential model does not account for carrying capacity, it is therefore modelling a population with infinite resources or one that has not reached its carrying capactiy yet. However we know that the carrying capacity of this population has been predicted to be 6.00 x 10<sup>10</sup>, and from the plots it is clear that by 4980 minutes the population has reached carrying capacity. 
+
+
+
 
 
